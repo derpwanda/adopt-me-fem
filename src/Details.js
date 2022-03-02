@@ -6,13 +6,6 @@ import ErrorBoundary from "./ErrorBoundary";
 // you cannot use Hooks here
 
 class Details extends Component {
-  // no longer needed after adding babel plugin
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = { loading: true };
-  // }
-
   //after adding babel plugin
   state = { loading: true };
 

@@ -4,11 +4,15 @@ import { Component } from "react";
 // you cannot use Hooks here
 
 class Details extends Component {
-  constructor(props) {
-    super(props);
+  // no longer needed after adding babel plugin
+  // constructor(props) {
+  //   super(props);
 
-    this.state = { loading: true };
-  }
+  //   this.state = { loading: true };
+  // }
+
+  //after adding babel plugin
+  state = { loading: true };
 
   async componentDidMount() {
     const res = await fetch(
